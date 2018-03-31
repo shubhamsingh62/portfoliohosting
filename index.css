@@ -1,0 +1,190 @@
+root:{    /*  fixed root font size  */
+	font-size: 10px
+}
+body{
+	margin: 0%;
+}
+.navbar{
+	background-color: skyblue;
+	overflow: hidden;
+	width: 100%;
+}
+.navbar a {                   /* for navbar a tag   */
+	float: left;
+	padding: 14px 12px;
+	color:black;
+	text-align: center;
+	display: block;
+	font-size: 1.5rem;
+
+}
+.navbar a:hover{
+	text-decoration: line-through;   /* this will give a line through on navbar link  while hovering  */
+
+}
+.image{
+	padding-top: 20vh;
+
+}
+.profile{            /*  for profile image    */
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 20%;
+	height: 20%;
+}
+.about{
+	font-family: Calligraffitti;    /* google font using here   */
+	font-size: 2.5rem;
+}
+.skill{
+    display: flex;     /*   using flex box here */
+    flex-wrap: wrap;
+ }
+ .responsive{
+  max-width: 100%;
+}
+
+    #Interest{
+    font-family:Pacifico;
+    	font-size: 2.0rem;
+}
+.skill1{
+    font-family:Pacifico;
+	margin-top: 10%;
+	font-size: 2.0rem;
+}
+.one{
+	margin-top: 8%;
+}
+.about1{
+	font-family: calligraffitti;
+	font-weight: bold;
+	font-size: 2rem;
+	padding-left: 15vw;
+}
+p:hover{          /* hover effect on p tag   */
+	color: orange;
+}
+.parent{
+	display: flex;
+	flex-wrap: wrap;
+}
+.item{
+	margin-top: 5%;
+}
+.responsive1{
+  max-width: 100%;
+}
+
+.item img {
+  display: block;
+}
+
+.two{
+	margin-top: 15%;
+}
+.footer{                      /*contact info */
+	margin-top: 20%;
+    left: 0%;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+.p1{
+	font-size: 1.5rem;
+}
+.p2{
+      font-size: 2.0rem;
+      margin-top: 10%;
+      font-weight: bold;
+      font-family:Pacifico;
+}
+.a1{
+	border: 1px solid black;
+	color: black;
+	background-color: grey;
+	font-family: Calligraffitti;
+	font-size: 2.0rem;
+	margin-left: 5%;
+}
+.a1:hover{
+	color: blue;
+}
+
+/*media query start from here   */
+@media screen and (max-width: 5000px) and (min-width: 650px){
+	.navbar a.icon{
+		display: none;
+	}
+ }
+
+@media screen and (max-width: 650px) {
+  .navbar a:not(:first-child) {   /* except first link i.e About all set to display none in navbar  */
+  	display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 900px){
+	.profile{
+		width:35%;
+		height:35%;
+		margin-left: auto;     /* set auto means it will adjust according to contanier size  */
+		margin-right: auto;
+		display: block;
+	}
+}
+@media screen and (max-width: 400px){
+	.profile{
+		width:50%;
+		height:50%;
+	}
+	
+}
+@media screen and (min-width: 800px) {
+  .skill {
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: row;   /*  set  a flex box in a row*/
+  }
+  .parent{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;	
+  }
+  .item{
+  	width:50%;
+ }
+  .image1 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .image1{
+    width: calc(100% / 3); /*  use calulate function this will equal to 33.33%   */
+  }
+  .item{
+  	width: calc(100% / 3);
+  }
+}

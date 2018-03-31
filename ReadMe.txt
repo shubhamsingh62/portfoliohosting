@@ -1,0 +1,13 @@
+ Responsive Portfolio
+--------------------------------------------------------------------------
+->html file with name of index.html
+->css file with name of index.css
+->javascript file with name of index.js
+->all  the image in image name folder.
+------------------------------------------------------------------------------------------
+->On page when user click on Interest link on navbar it will redirect to interested in Learning these technology now area.
+->When an user click on InFuture link on navbar it will redirect to Interested in Learning these technology in future area.
+->When  an user click on to Contact link on navbar than it will redirect to contact info. 
+->user can see  cross-line hover effect when its hover on navbar link and changing of color in paragraph and heading .
+->At the bottom of the page user get a link name portfolio when user   click on it redirect to first page.
+-----------------------------------------END---------------------------------------------------------------------------
